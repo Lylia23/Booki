@@ -7,6 +7,8 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --largeur-max: 1440px;
+    --largeur-min: 320px;
 }
 
 .fa-solid {
@@ -20,7 +22,8 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
+    max-width: var(--largeur-max);
+    min-width: var(--largeur-min);
     padding: 0 50px;
     box-sizing: border-box;
 }
