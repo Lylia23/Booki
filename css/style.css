@@ -28,6 +28,31 @@ body {
     box-sizing: border-box;
 }
 
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.logo {
+    width: 60px;
+    height: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; 
+    width: 230px;
+}
+
+.titre-menu {
+
+    &:hover {
+        color: var(--main-color);
+        border-top: 2px var(--main-color) solid;
+    }
+}
+
 a {
     color: inherit;
     text-decoration: none;
