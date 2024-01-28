@@ -153,6 +153,10 @@ a {
     height: 21px;
 }
 
+.filtre-button {
+    display: flex;
+}
+
 .filtres {
     display: flex;
     align-items: center;
@@ -482,5 +486,62 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-header {
+        flex-direction: column;
+
+        div {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    .main-menu {
+       width: 100%; 
+       justify-content: center;
+    } 
+
+    .titre-menu {
+        width: 100%;
+        text-align: center ;
+        a {
+            position: relative;
+            top: -10px;
+        }
+    
+        &:hover {
+            position: relative;
+            bottom: -1px;
+            color: var(--main-color);
+            border-top: none;
+            border-bottom: 2px var(--main-color) solid;
+        }
+    }
+
+    .filtres {
+        justify-content: none;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .filtre {
+        border:1px red solid;
+    }
+
+    .filtre-button {  
+        flex-wrap: wrap;
+        flex: 2;
+        justify-content: space-between;
+        a {
+            width: 42%;
+            margin-top: 20px;
+        }
+    }
+
+    .filter-icon {
+        margin: 0;
+    }
+
 }
