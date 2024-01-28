@@ -468,6 +468,16 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites {
+        height: 270px;
+    }
+
+    .activite {
+        img {
+            height: 200px;
+        }
+    } 
 }
 
 /* Small devices (phones, less than 768px) */
