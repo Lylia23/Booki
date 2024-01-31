@@ -108,6 +108,14 @@ a {
         outline: none;
         width: 195px;
         font-size: 18px;
+        text-align: center;
+        &::placeholder {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            color: black;
+        }
     }
 }
 
@@ -143,6 +151,10 @@ a {
         letter-spacing: 0em;
         align-self: center;
         color: white;
+    }
+
+    i {
+        display: none;
     }
 }
 
@@ -204,6 +216,7 @@ a {
     align-items: center;
     font-size: 16px;
     color: black;
+    gap: 12px;
 
     div {
         display: flex;
@@ -211,13 +224,19 @@ a {
         border: 1px var(--filter-border-color) solid;
         width: 24px;
         height: 24px;
+        min-width: 24px;
         border-radius: 12px;
-        margin-right: 12px;
 
         i {
             align-self: center;
             color: var(--main-color);
         }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.78px;
     }
 }
 
@@ -490,6 +509,7 @@ a {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        min-width: var(--largeur-min);
     }
    
     .main-container {
@@ -545,14 +565,17 @@ a {
     .moteur-recherche {
         margin: auto;
         width: 100%;
-
+        position: relative;
+        left: 2%;
         input {
-            width: 90%;
+            width: 75%;
+            text-align: left;
         }
     }
 
     .bouton-recherche {
-        width: 49px;
+        width: 49px !important;
+        height: 49px;
         border-radius: 15px;
         display: flex;
         justify-content: center;
@@ -566,22 +589,25 @@ a {
         }
 
         i {
+            display: contents;
             color: white;
         }
     }
 
     .filtre-button {  
-        flex-wrap: wrap;
-        flex: 2;
-        justify-content: space-between;
-        a {
-            width: 42%;
-            margin-top: 20px;
-        }
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     .filter-icon {
         margin: 0;
+        display: flex;
+        justify-content: center;
+        p {
+            font-size: 14px;
+        }
     }
 
     .hebergements-and-populaires {
