@@ -551,7 +551,6 @@ a {
     }
 
     .filtres {
-        justify-content: none;
         flex-direction: column;
         align-items: start;
     }
